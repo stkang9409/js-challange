@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/randNum.css" type="text/css" />
+  </head>
+  <body>
+    <h1 class="title">Random Number Game</h1>
+    <h4 class="description">Generate a number between 0 and 100</h4>
+    <form class="range_form js-range_form">
+      <span class="tick_container">
+        <h6 class="tick">|</h6>
+        <h6 class="tick">|</h6>
+        <h6 class="tick">|</h6>
+        <h6 class="tick">|</h6>
+      </span>
+      <input type="range" class="range" min="0" max="200" step="1" />
+    </form>
+    <span class="guessing_box">
+      <h4>Guess the number:</h4>
+      <form class="guessing_form">
+        <input type="text" class="guessing_input" />
+      </form>
+      <button>Play!</button>
+    </span>
+    <div class="result">
+      <span class="span">You chose: 1, the machine Chose: 33</span>
+      <span class="isWin">You lose!</span>
+    </div>
+    <script src="src/randNum.js"></script>
+  </body>
+</html>
